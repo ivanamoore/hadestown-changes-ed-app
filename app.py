@@ -23,7 +23,7 @@ app.layout = html.Div(children=[
     html.H1( id = 'title',
         children = 'Hadestown Concept -> Cast -> Broadway Changes'),
     html.H6(id = 'subtitle',
-        children = 'This is a web-application that uses Genius provided lyrics and the difflib library to track the changes per song and per album! Enjoy! (This was made for educational purposes only.)'),
+        children = 'This is a web-application that uses Genius provided lyrics and the difflib library to track the changes per song and per album! Enjoy!'),
 
     html.Label('Choose a song'),
 
@@ -86,7 +86,8 @@ html.Div( children = [
     html.Label('Pleast click submit below:'),
     html.Button(id = 'button', children = 'Submit', n_clicks=0),
     html.Hr(),
-    html.Iframe(id = 'text', srcDoc='', style={'width':'90%', 'height':'500px', 'overflow':'auto'})
+    html.Iframe(id = 'text', srcDoc='', style={'width':'90%', 'height':'500px', 'overflow':'auto'}),
+    html.Footer(id='footer', children = 'This was created solely for educational purposes. All rights and content are reserved to Genius, Anais Mitchell, Dash, and Heroku.')
 
 ])
 
